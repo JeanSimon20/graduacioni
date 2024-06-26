@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Felicidades!</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f8b500, #ff8400);
+            font-family: 'Arial', sans-serif;
+        }
+        .message-container {
+            text-align: center;
+            color: white;
+            z-index: 10;
+        }
+        .message-container h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+        }
+        .message-container p {
+            font-size: 1.5em;
+            margin: 0;
+            padding: 0;
+        }
+        .confetti-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .btn-container {
+            margin-top: 20px;
+        }
+        .btn-container button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>¡Felicidades, amor!</h1>
+        <p>Estoy tan orgulloso de ti por tu graduación en maquillaje.</p>
+        <div class="btn-container">
+            <button onclick="window.location.href = 'flor.html'">Presiona aquí</button>
+        </div>
+    </div>
+    <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+    <script src="scripts.js"></script>
+</body>
+</html>
