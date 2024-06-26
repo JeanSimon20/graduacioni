@@ -10,7 +10,7 @@ window.onload = function() {
     var confetti = [];
     var animationFrameId;
     var startTime = Date.now();
-    var duration = 5000;
+    var duration = 15000;
 
 
     
